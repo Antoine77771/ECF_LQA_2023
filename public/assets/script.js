@@ -1,14 +1,14 @@
-function toggleMenu () {
+function toggleMenu() {
     const navbar = document.querySelector('.navbar');
     const burger = document.querySelector('.burger');
 
-    burger.addEventListener('click', (e) => {
+    burger.addEventListener('click', (ev) => {
         navbar.classList.toggle('show-nav');
     });
     // bonus
     const navbarLinks = document.querySelectorAll('.navbar a');
     navbarLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+        link.addEventListener('click', (ev) => {
             navbar.classList.toggle('show-nav');
         });
     })
@@ -130,7 +130,7 @@ const handleIntersect = function (entries, observer) {
     })
 }
 const observer = new IntersectionObserver (handleIntersect, options)
-document.querySelectorAl1('.reveal').forEach(function (rev) {
+document.querySelectorAll('.reveal').forEach(function (rev) {
     observer.observe(rev);
 })
 

@@ -8,7 +8,7 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
-        <link rel="stylesheet" href="{{ asset('assets/styles.scss') }}">
+        <link rel="stylesheet" href="{{ asset('assets/styles.css') }}">
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
@@ -16,32 +16,12 @@
         <script src="{{ asset('assets/script.js') }}"></script>
     </head>
     <body>
-        <!-- banner -->
-        
-        <div class="banner">
-            <nav class="navbar dark-mode" role="navigation">
-                <ul class="navbar__links">
-                    <li class="navbar__link first"><a href="#">Accueil</a></li>
-                    <li class="navbar__link second"><a href="#section2">reservation</a></li>
-                    <li class="navbar__link third"><a href="#">la carte</a></li>
-                    <li class="navbar__link four"><a href="#">compte</a></li>
-                    <li class="navbar__link four"><a href="#">horaires</a></li>
-                    <li class="navbar__link fifth"><a href="#">Contact</a></li>
-                </ul>
-                <button class="burger">
-                    <span class="bar"></span>
-                </button>
-            </nav>
-            <a href="#" class="a__reservation">reservation</a>
-            <div class="title__h1">le quai antique</div>
-        </div>
+
 
         <main>
         {% block body %}{% endblock %}
+
         </main>
 
-        <!-- cursor-->
-        <div class="cursor"></div>
-        <div class="cursor cursor2"></div>
     </body>
 </html>
